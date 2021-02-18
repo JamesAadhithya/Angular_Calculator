@@ -1,0 +1,47 @@
+<div>
+    <h1>
+        <p>{{pageTitle}}</p>
+    </h1>
+</div>
+<div>
+    <h2>
+        <table border=".5">
+            <caption> a simple calculator</caption>
+            <tbody>
+                <tr>
+                    <td colspan="3">
+                        <form>
+                            <input value={{result}}>
+                        </form>
+                    </td>
+                    <td><button (click)="getOperand('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button (click)="getNumber(7)">7</button></td>
+                    <td><button (click)="getNumber(8)">8</button></td>
+                    <td><button (click)="getNumber(9)">9</button></td>
+                    <td><button (click)="getOperand('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td><button (click)="getNumber(4)" value="4">4</button></td>
+                    <td><button (click)="getNumber(5)">5</button></td>
+                    <td><button (click)="getNumber(6)">6</button></td>
+                    <td><button (click)="getOperand('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button (click)="getNumber(1)">1</button></td>
+                    <td><button (click)="getNumber(2)">2</button></td>
+                    <td><button (click)="getNumber(3)">3</button></td>
+                    <td><button (click)="getOperand('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button (click)="getNumber(0)">0</button></td>
+                    <td><button (click)="getOperand('.')">.</button></td>
+                    <td colspan="2">
+                        <button (click)="getTotal()" >=</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </h2>
+</div>

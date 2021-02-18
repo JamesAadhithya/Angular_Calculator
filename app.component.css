@@ -1,0 +1,26 @@
+h1>p{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+table{
+   margin-left: auto;
+   margin-right: auto;
+    
+}
+caption{
+    text-align: center;
+    white-space: nowrap;
+    
+}
+td>button{
+  border: none;
+  background: none;
+  outline: none;
+}
+input{
+    border: none;
+    text-align: right;
+    font-size: medium;
+}
